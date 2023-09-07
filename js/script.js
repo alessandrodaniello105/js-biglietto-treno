@@ -24,6 +24,8 @@ if (ageVerify === -1) { //età negativa
   message = "Inserisci una distanza reale";
 } else if (ageVerify === 1 && kmVerify === 0) { //se età è verificato e km è 0
   message = "Vuoi restare a casa?";
+} else if (ageVerify != 1 || kmVerify != 1) { //se età o km è un campo vuoto
+  message = "C'è qualcosa che non va";
 } else { //età e km verificati, il programma funziona
 
   message = "Il costo del tuo biglietto è di ";
