@@ -1,28 +1,31 @@
-//1+2
+//1.
 const age = parseInt(prompt('Quanti anni hai?'));
 const userKm = parseInt(prompt('Quanti km devi percorrere?'));
 
-//3.
+//2.
 const priceKm = 0.21;
 const juniorDiscount = 0.2;
 const seniorDiscount = 0.4;
 
-//4.
+//3.
 let message, costTicketNormal, costTicketTotal;
 
+//4.
+//Validazione età e poi km
 let kmVerify = Math.sign(userKm);
 
-//Validazione età e poi km
 let ageVerify = Math.sign(age);
+
 if (ageVerify === -1) { //età negativa
   message = "Inserisci un'età vera";
 } else if (ageVerify === 0 ) { //età uguale a 0
   message = "Sei appena nato?";
-} else if(ageVerify === 1 && kmVerify === -1) {
+} else if(ageVerify === 1 && kmVerify === -1) { //se età è verificato e km è negativo
   message = "Inserisci una distanza reale";
-} else if (ageVerify === 1 && kmVerify === 0) {
+} else if (ageVerify === 1 && kmVerify === 0) { //se età è verificato e km è 0
   message = "Vuoi restare a casa?";
-} else { //età maggiore di 0
+} else { //età e km verificati, il programma funziona
+
   message = "Il costo del tuo biglietto è di ";
 
   costTicketNormal = (userKm * priceKm);
