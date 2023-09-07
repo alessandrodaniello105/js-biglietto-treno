@@ -4,4 +4,5 @@ Calcolo del prezzo del biglietto del treno
 2. Salvo questi dati nelle rispettive variabili
 3. Dichiaro le variabili per il prezzo in € a km, e i due sconti età
 4. Dichiaro la variabile del prezzo del biglietto e lo calcolo
+5. Verifico se c'è uno sconto da applicare e nel caso calcolo il risultato
 5. Stampo il risultato in pagina
