@@ -35,10 +35,16 @@ if (ageVerify === -1) { //età negativa
   //5.
   if (age <= 17) {
     costTicketTotal = Math.abs((costTicketNormal * juniorDiscount) - costTicketNormal).toFixed(2);
-    message += costTicketTotal + " €. Ed è stato applicato uno sconto del 20%.";
+    message += `
+      ${costTicketTotal} €. Ed è stato applicato uno sconto del 20%. <br>
+      Il prezzo originale era ${costTicketNormal} €.
+    `; 
   } else if (age >= 65) {
     costTicketTotal = Math.abs((costTicketNormal * seniorDiscount) - costTicketNormal).toFixed(2);
-    message += costTicketTotal + " €. Ed è stato applicato uno sconto del 40%.";
+    message += `
+      ${costTicketTotal} €. Ed è stato applicato uno sconto del 40%. <br>
+      Il prezzo originale era ${costTicketNormal} €.
+    `; 
   } else {
     costTicketTotal = costTicketNormal;
     message += costTicketTotal + " €.";
